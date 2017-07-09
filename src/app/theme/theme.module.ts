@@ -7,6 +7,7 @@ import { ThemeComponent } from './theme.component';
 import { Theme01Component } from './theme01/theme01.component';
 import { Theme02Component } from './theme02/theme02.component';
 import { Theme03Component } from './theme03/theme03.component';
+import { AppCommonModule } from "../appcommon.module";
 
 const routes = [
   {
@@ -18,6 +19,7 @@ const routes = [
 @NgModule({
   imports: [
     CommonModule,
+    AppCommonModule,
     RouterModule.forRoot(routes, { enableTracing: true })
   ],
   declarations: [
