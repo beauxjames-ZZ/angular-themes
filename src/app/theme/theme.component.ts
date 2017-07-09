@@ -20,7 +20,7 @@ export class ThemeComponent implements OnInit {
   ngOnInit() {
   }
 
-  static getRandomInt(min, max) {
+  getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
